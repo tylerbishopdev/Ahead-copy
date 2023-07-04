@@ -1,0 +1,4 @@
+{
+  "npm.fetchOnlinePackageInfo": false,
+  "files.readonlyFromPermissions": true
+}
