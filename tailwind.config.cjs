@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: ["./src/**/*.{astro,js,jsx,ts,tsx,vue}", ".public/**/*"],
+  purge: ["./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
+  darkMode: "media",
   theme: {
     colors: {
       transparent: "transparent",
@@ -139,7 +140,7 @@ module.exports = {
       }
     }
   },
-
+  variants: {},
   corePlugins: {
     preflight: false
   },
