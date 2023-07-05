@@ -92,55 +92,56 @@ module.exports = {
       keyframes: {
         "star-animation": {
           "80%": { transform: "scale(0) translateZ(100px)" },
-          "100%": { transform: "scale(1) translateZ(100px)" },
-
-          "fade-in-down": {
-            "25%": {
-              opacity: "0",
-              transform: "translateY(10px)"
-            },
-            "0%": {
-              opacity: "10",
-              transform: "translateY(0px)"
-            }
-          },
-          "fade-out-down": {
+          "100%": { transform: "scale(1) translateZ(100px)" }
+        },
+        "fade-in-down": {
+          "0%": {
             from: {
-              opacity: "1",
-              transform: "translateY(10px)"
-            },
-            to: {
               opacity: "0",
-              transform: "translateY(0px)"
+              transform: "translateY(-10px)"
             }
           },
-          "fade-in-up": {
-            "0%": {
-              opacity: "0",
-              transform: "translateY(10px)"
-            },
-            "100%": {
-              opacity: "1",
-              transform: "translateY(0px)"
-            }
+          to: {
+            opacity: "1",
+            transform: "translateY(0px)"
+          }
+        },
+        "fade-out-down": {
+          from: {
+            opacity: "1",
+            transform: "translateY(10px)"
           },
-          "fade-out-up": {
-            from: {
-              opacity: "1",
-              transform: "translateY(10px)"
-            },
-            to: {
-              opacity: "0",
-              transform: "translateY(0px)"
-            }
+          to: {
+            opacity: "0",
+            transform: "translateY(0px)"
+          }
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(10px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)"
+          }
+        },
+        "fade-out-up": {
+          from: {
+            opacity: "1",
+            transform: "translateY(10px)"
+          },
+          to: {
+            opacity: "0",
+            transform: "translateY(0px)"
           }
         }
       }
-    },
+    }
+  },
 
-    corePlugins: {
-      preflight: false
-    },
-    plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")]
-  }
+  corePlugins: {
+    preflight: false
+  },
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")]
 };
