@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  purge: ["./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
-  darkMode: "media",
+  content: ["./src/**/*.{astro,js,jsx,ts,tsx,vue}", ".public/**/*"],
   theme: {
     colors: {
       transparent: "transparent",
@@ -44,11 +43,11 @@ module.exports = {
       mono: ["Source Sans Pro", "monospace"]
     },
     fontSize: {
-      xs: ["1rem", { lineHeight: "1rem" }],
-      sm: ["1.125rem", { lineHeight: "1.25rem" }],
-      base: ["1.20rem", { lineHeight: "1.5rem" }],
-      lg: ["1.3rem", { lineHeight: "1.75rem" }],
-      xl: ["1.25rem", { lineHeight: "1.75rem" }],
+      xs: ["0.775rem", { lineHeight: "0.875rem" }],
+      sm: ["0.875rem", { lineHeight: "1.15rem" }],
+      base: ["1.15rem", { lineHeight: "1.55rem" }],
+      lg: ["1.3rem", { lineHeight: "1.85rem" }],
+      xl: ["1.45rem", { lineHeight: "1.9rem" }],
       "2xl": ["1.5rem", { lineHeight: "2rem" }],
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
       "4xl": ["2.55rem", { lineHeight: "2.5rem" }],
@@ -84,35 +83,35 @@ module.exports = {
           "linear-gradient(174deg, rgba(113,207,37,1) 0%, rgba(138,255,55,1) 73%, rgba(171,255,102,1) 100%)"
       },
       animation: {
-        "star-animation": "star-animation 2s linear infinite",
-        "fade-in-down": "fade-in-down 0.5s ease-out",
-        "fade-out-down": "fade-out-down 0.5s ease-out",
-        "fade-in-up": "fade-in-up 0.5s ease-out",
-        "fade-out-up": "fade-out-up 0.5s ease-out"
+        "star-animation": "star-animation 18s linear infinite",
+        "fade-in-down": "fade-in-down 15s ease-out",
+        "fade-out-down": "fade-out-down 15s ease-out",
+        "fade-in-up": "fade-in-up 15s ease-out",
+        "fade-out-up": "fade-out-up 15s ease-out"
       },
       keyframes: {
         "star-animation": {
-          "0%": { transform: "scale(0) translateZ(-300px)" },
-          "100%": { transform: "scale(1) translateZ(200px)" },
+          "80%": { transform: "scale(0) translateZ(100px)" },
+          "100%": { transform: "scale(1) translateZ(100px)" },
 
           "fade-in-down": {
-            "0%": {
+            "25%": {
               opacity: "0",
-              transform: "translateY(-10px)"
+              transform: "translateY(10px)"
             },
-            "100%": {
-              opacity: "1",
-              transform: "translateY(0)"
+            "0%": {
+              opacity: "10",
+              transform: "translateY(0px)"
             }
           },
           "fade-out-down": {
             from: {
               opacity: "1",
-              transform: "translateY(0px)"
+              transform: "translateY(10px)"
             },
             to: {
               opacity: "0",
-              transform: "translateY(10px)"
+              transform: "translateY(0px)"
             }
           },
           "fade-in-up": {
@@ -122,23 +121,23 @@ module.exports = {
             },
             "100%": {
               opacity: "1",
-              transform: "translateY(0)"
+              transform: "translateY(0px)"
             }
           },
           "fade-out-up": {
             from: {
               opacity: "1",
-              transform: "translateY(0px)"
+              transform: "translateY(10px)"
             },
             to: {
               opacity: "0",
-              transform: "translateY(10px)"
+              transform: "translateY(0px)"
             }
           }
         }
       }
     },
-    variants: {},
+
     corePlugins: {
       preflight: false
     },
