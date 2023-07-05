@@ -9,4 +9,9 @@ export default defineConfig({
   integrations: [tailwind(), image()],
   output: "server",
   adapter: netlify()
+
+tailwind:
+  {
+    config: "./tailwind.config.mjs",
+  }
 });
