@@ -1,4 +1,30 @@
 {
   "npm.fetchOnlinePackageInfo": false,
-  "files.readonlyFromPermissions": true
+  "files.readonlyFromPermissions": false,
+  "workbench.editor.autoLockGroups": {
+    "terminalEditor": false
+  },
+  "markdown-image.github.repository": "",
+  "markdown-image.github.token": "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",
+  "githubIssues.useBranchForIssues": "off",
+  "githubPullRequests.useReviewMode": {
+    "merged": false
+  },
+  "githubRepositoryManager.alwaysCloneToDefaultDirectory": true,
+  "gitlens.hovers.autolinks.enhanced": false,
+  "gitlens.views.commitDetails.pullRequests.enabled": false,
+  "gitlens.views.commitDetails.autolinks.enhanced": false,
+  "gitlens.views.repositories.pullRequests.enabled": false,
+  "gitlens.views.repositories.pullRequests.showForBranches": false,
+  "gitlens.views.repositories.pullRequests.showForCommits": false,
+  "gitlens.views.branches.pullRequests.showForCommits": false,
+  "gitlens.views.remotes.pullRequests.enabled": false,
+  "gitlens.views.worktrees.pullRequests.enabled": false,
+  "gitlens.views.remotes.pullRequests.showForCommits": false,
+  "gitlens.views.worktrees.pullRequests.showForCommits": false,
+  "gitlens.views.contributors.pullRequests.enabled": false,
+  "gitlens.views.searchAndCompare.pullRequests.enabled": false,
+  "gitlens.views.contributors.pullRequests.showForCommits": false,
+  "gitlens.graph.pullRequests.enabled": false,
+  "AllAutocomplete.showCurrentDocument": false
 }
