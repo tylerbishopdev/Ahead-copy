@@ -8,10 +8,5 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   integrations: [tailwind(), image()],
   output: "server",
-  adapter: netlify(),
-  // adapter: "netlify"
-
-  taiilwind: {
-    config: "./tailwind.config.cjs"
-  }
+  adapter: netlify()
 });
