@@ -26,5 +26,5 @@
   "gitlens.views.searchAndCompare.pullRequests.enabled": false,
   "gitlens.views.contributors.pullRequests.showForCommits": false,
   "gitlens.graph.pullRequests.enabled": false,
-  "AllAutocomplete.showCurrentDocument": false
+  "AllAutocomplete.showCurrentDocument": true
 }
